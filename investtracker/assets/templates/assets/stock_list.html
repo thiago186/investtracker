@@ -1,0 +1,29 @@
+{% extends 'assets/base.html' %}
+
+{% block body %}
+    <h1>Lista de Ações</h1>
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">id</th>
+        <th scope="col">Ticker</th>
+        <th scope="col">Nome da Empresa</th>
+        <th scope="col">País</th>
+        <th scope="col">Ramo/Setor</th>
+        <th scope="col">Ticker do Sistema</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for stock in stocks %}
+        <tr>
+            <td scopt="row">{{ stock.id }}</td>
+            <td scope="row">{{ stock.asset_type }}</td>
+            <td scope="row">{{ stock.company_name }}</td>
+            <td scope="row">{{ stock.native_currency }}</td>
+            <td scope="row">{{ stock.business_market }}</td>
+            <td scope="row">{{ stock.extenal_ticker }}</td>
+        </tr>
+    {% endfor %}
+</tbody>
+    </table>
+{% endblock %}

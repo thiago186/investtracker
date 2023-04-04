@@ -8,4 +8,5 @@ urlpatterns = [
     path('create_stock/', views.create_stock, name='create_stock'),
     path('investment_funds/', views.create_investment_funds, name='create_investment_funds'),
     path('fixed_income/', views.create_fixed_income, name='create_fixed_income'),
+    path('stock_list/', views.stock_list, name='stock_list'),
 ]
