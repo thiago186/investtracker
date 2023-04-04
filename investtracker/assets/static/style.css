@@ -1,0 +1,11 @@
+body{
+    background-color: lightgrey;
+}
+
+.navbar .nav-link {
+    color: purple;
+}
+
+.navbar .navbar-brand{
+    color: purple;
+}
